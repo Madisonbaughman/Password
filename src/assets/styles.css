@@ -1,0 +1,61 @@
+.App {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+}
+
+  ul {
+    display: show;
+    text-align: center;
+    color: white;
+  }
+  .boxesDiv{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .boxes {
+    background-image: linear-gradient(black, grey);
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  .graveyard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    border-style: solid;
+    border-color: black;
+    background-image: linear-gradient(purple, red, rgb(83, 83, 34));
+    overflow: scroll;
+  }
+
+  .makeRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .graveyardLetters {
+    padding: 1.5px;
+    list-style-type: none;
+  }
+  
+  .solveBox {
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    height: auto;
+    width: auto;
+  }

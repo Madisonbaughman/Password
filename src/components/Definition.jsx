@@ -1,7 +1,7 @@
  const Definition = ({def}) => {
     return (
     <div className='definitionBox'>
-        <p>{def.definition}</p>
+        <h3>{def.definition}</h3>
     </div>
     )
 }

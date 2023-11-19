@@ -65,7 +65,16 @@ return (
       <div className='top'>
         {guess()}
         
-        <WordGraveyard guesses={guesses} />
+        <div className='middleDirectives'>
+            <WordGraveyard guesses={guesses} />
+            <div className='directions'>
+                <p>How to play: Guess a letter and hit submit.  You can also choose to solve the puzzle but you only get one shot. 
+                    If you do not submit a correct answer, you will fail to learn the definiton of the word! (Words can be plural or 
+                    require "-")
+                </p>
+            </div>
+            
+        </div>
 
         <div className='boxesDiv'>
             {displayWordArr.map((letter, i) => (
@@ -79,7 +88,7 @@ return (
 
         <Solve chosenWordCap={chosenWordCap} def={def} setDefToggle={setDefToggle}/>
         {defToggle && <Definition def={def}/>}
-        <button onClick={reload}>Reload Page Here To Start New Game</button>
+        <button className='reloadFooter' onClick={reload}>Reload Page Here To Start New Game</button>
       </div>
     </>
   );

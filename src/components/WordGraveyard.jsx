@@ -1,7 +1,7 @@
 export default function WordGraveyard({ guesses }) {
     return (
       <div className="graveyard">
-        <h3>Chosen Letters</h3>
+        <p>Chosen Letters</p>
         <div className='makeRow'>
           {guesses.old.map((n) => (
             

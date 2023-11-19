@@ -3,8 +3,6 @@ import "../assets/styles.css";
 import DisplayWord from "./DisplayWord.jsx";
 import { wordsArray } from "../assets/wordsArray.js";
 
-//add key to .env and import key
-
 function StartButton() {
   let [startToggle, setStartToggle] = useState(false)
   let [chosenWord, setWord] = useState(null);
@@ -73,7 +71,7 @@ function StartButton() {
   };
 
   return (
-    <>
+    <div className='fit'>
       <button style={{ margin: 20 }} onClick={handleClick} disabled={startToggle}>
         {" "}
         New Password{" "}
@@ -88,7 +86,7 @@ function StartButton() {
           />
         </>
       )}
-    </>
+    </div>
   );
 }
 

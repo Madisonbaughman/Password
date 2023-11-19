@@ -1,10 +1,13 @@
 .App {
     font-family: "Courier New", Courier, monospace;
     text-align: center;
+    
   }
   .top {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    width: 100vw;
 }
 
   ul {
@@ -12,6 +15,7 @@
     text-align: center;
     color: white;
   }
+
   .boxesDiv{
     display: flex;
     flex-direction: row;
@@ -25,15 +29,15 @@
     border: 1px solid black;
     border-radius: 20px;
   }
+
   .graveyard {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
+    flex-direction: column; 
+    color: black;
     border-radius: 20px;
     margin: 20px;
     padding: 20px;
-    width: 200px;
+    width: 300px;
     height: 100px;
     border-style: solid;
     border-color: black;
@@ -50,6 +54,7 @@
   .graveyardLetters {
     padding: 1.5px;
     list-style-type: none;
+    font-weight: bold;
   }
   
   .solveBox {
@@ -58,4 +63,33 @@
     padding: 20px;
     height: auto;
     width: auto;
+  }
+
+  .reloadFooter {
+    height: auto;
+    width: auto;
+  }
+
+  .fit {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .definitionBox{
+    padding: 30px;
+    color: red;
+  }
+
+  .middleDirectives{
+    display: flex;
+    flex-direction: row;
+    color: rgb(121, 107, 107);
+
+  }
+
+  .directions{
+    width: auto;
+    height: 200px;
+    overflow: scroll;
+    padding: 20px;
   }
